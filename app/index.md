@@ -1,8 +1,8 @@
 ---
 homepage: true
 layout: home
-title: "A design history for your GOV.UK service"
-description: "Document and share design decisions. Create a permanent record of how your service has developed over time."
+title: "A design history for CDS financials"
+description: "A history of the designs for the 'View your customs financial accounts' service."
 pagination:
   data: collections.all
   reverse: true
