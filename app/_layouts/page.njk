@@ -1,0 +1,19 @@
+{% extends "layouts/page.njk" %}
+
+{% from "screenshots/macro.njk" import appScreenshots %}
+
+{% block content %}
+  {% call appArticle({
+    header: {
+      title: title | noOrphans
+    }
+  }) %}
+    {{ content }}
+
+    {% for collection in screenshots %}
+      {{ appScreenshots(collection) }}
+    {% else %}
+      {{ appScreenshots(screenshots) if screenshots }}
+    {% endfor %}
+  {% endcall %}
+{% endblock %}
